@@ -24,12 +24,12 @@ az ad app create \
     --oauth2-allow-implicit-flow true
 ```
 
-4. Edit the `appsettings.json` and edit with the application paremeters:
+4. Edit the `appsettings.json` and add the application paremeters:
 
-```
-    "Domain": "",
-    "TenantId": "",
-    "ClientId": "",
+```json
+"Domain": "",
+"TenantId": "",
+"ClientId": "",
 ```
 
 5. Install .NET Core SDK
