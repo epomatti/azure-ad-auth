@@ -10,9 +10,9 @@ Form-based authentication with Azure AD.
 
 ```sh
 az ad user create \
-    --display-name "User 1" \
-    --password "Str0ngP@ssw0rd" \
-    --user-principal-name user1@<yourfulldomain>
+    --display-name 'User 1' \
+    --password 'Str0ngP@ssw0rd' \
+    --user-principal-name 'user1@<yourfulldomain>'
 ```
 
 3. Register your application:
@@ -20,7 +20,7 @@ az ad user create \
 ```sh
 az ad app create \
     --display-name mywebapp \
-    --reply-urls http://localhost:5000/signin-oidc
+    --reply-urls 'http://localhost:5000/signin-oidc'
     --oauth2-allow-implicit-flow true
 ```
 
@@ -47,7 +47,7 @@ Command used to create the MVC App:
 
 ```sh
 dotnet new mvc --auth SingleOrg \
-    --client-id <client_id> \
-    --tenant-id <tenant_id> \
-    --domain <domain>
+    --client-id '<client_id>' \
+    --tenant-id '<tenant_id>' \
+    --domain '<domain>'
 ```
